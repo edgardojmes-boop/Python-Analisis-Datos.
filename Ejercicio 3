@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Ejercicio3chat {
+
+    public static void main(String[] args){
+       Scanner sc = new Scanner(System.in);
+        System.out.println("Por favor ingresar el radio del circulo en cm");
+        double Radio1 = sc.nextDouble();
+
+        double Diametro = Radio1 * 2;
+        double Perimetro = Diametro * Math.PI;
+        double Area = Math.PI * Math.pow(Radio1,2);
+
+        System.out.println("el diametro del circulo es "+ Diametro);
+        System.out.println("el Perimetro del circulo es "+ Perimetro);
+        System.out.println("El area del circulo es"+ Area);
+
+    
+sc.close();
+}
+}
