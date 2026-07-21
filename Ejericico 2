@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Ejercicios {
+public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Calculadora Matematica");
+    System.out.println("Ingrese su operación en el siguiente orden 1.Suma 2.Resta 3.Multiplicación 4.División");
+    double num0 = sc.nextDouble();
+    System.out.println("Ingrese su numero");
+    double num1 = sc.nextDouble();
+    System.out.println("Ingrese su numero");
+    double num2 = sc.nextDouble();
+    
+    if (num0 == 1) {
+        double Suma = num1 + num2; 
+        System.out.println(Suma);
+    }   
+    
+    if (num0 == 2) {
+        double Resta = num1 - num2;
+        System.out.println(Resta);
+    }
+    if (num0 == 3) {
+        double Multi = num1 * num2;
+        System.out.println(Multi);
+    }
+   if (num0 == 4) {
+       double Div = num1 / num2;
+       System.out.println(Div);
+   }
+    
+
+  sc.close();
+}
+}
