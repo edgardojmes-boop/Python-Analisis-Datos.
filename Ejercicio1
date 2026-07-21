@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Ejercicio1chat { 
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Ingrese su nombre");
+String pa1 = sc.nextLine();
+System.out.println("ingrese su profesión");
+String pa2 = sc.nextLine();
+System.out.println("ingrese su edad");
+int pa3 = sc.nextInt();
+
+System.out.println("Tu nombre es" + pa1);
+System.out. println("Eres un " +  pa2);
+System.out.println("Tienes" + pa3);
+sc.close();
+}
+}
