@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Ejercicio9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int opcion;
+        
+        do {
+        System.out.println("Bienvenido al Sistema");
+        System.out.println("Desea Continuar");
+        System.out.println("1.Si 2.No seleccione el numero deseado");
+        opcion = sc.nextInt();
+
+        }while(opcion == 1); 
+
+        System.out.println("Gracias por utilizar el sistema");
+        sc.close();
+    }
+}
