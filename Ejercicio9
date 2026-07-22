@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Ejercicio8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Tablas de multiplicar");
+        System.out.println("Digite el numero que espera la multiplicacion");
+        int numero = sc.nextInt();
+        int num0 = 1;
+        while (num0 <= 10) {
+            System.out.println(numero + "x" + num0 + "=" + (numero * num0));
+            num0++;
+        }
+    }
+}
