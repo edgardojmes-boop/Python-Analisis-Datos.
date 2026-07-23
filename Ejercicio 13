@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class Ejercicio12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Comparador de numeros");
+        System.out.println("Ingrese el primer numero");
+        double numero1 = sc.nextDouble();
+        System.out.println("Ingrese el segundo numero");
+        double numero2 = sc.nextDouble();
+        System.out.println("Ingrese el tercer numero");
+        double numero3 = sc.nextDouble();
+
+        double mayor = Math.max(Math.max(numero1, numero2), numero3);
+        double menor = Math.min(Math.min(numero1, numero2),numero3);
+ 
+        if (numero1 == numero2 && numero2 == numero3) {
+            System.out.println("Los tres son iguales");
+        }
+        else if (numero1 == mayor && numero2 == mayor ) {
+            System.out.println(" El mayor es " + numero1 + " y " + numero2);
+        }
+        else if (numero1 == mayor && numero3 == mayor) {
+            System.out.println(" El mayor es " + numero1 + " y " +numero3);
+        }
+         else if (numero2 == mayor && numero3 == mayor ) {
+            System.out.println(" El mayor es " + numero2 + " y " +numero3);
+         }
+        else if (numero1 == mayor ) {
+            System.out.println(" El mayor es " + numero1 );
+        }    
+        else if (numero2 == mayor ) {
+            System.out.println(" El mayor es " + numero2);
+        }
+        else if (numero3 == mayor) {
+            System.out.println(" El mayor es " + numero3);
+        }
+        else {
+            System.out.println("Los tres son iguales");
+        } 
+        if (numero1 == numero2 && numero2 == numero3) {
+            System.out.println("..");
+        }
+        else if (numero1 == menor && numero2 == menor ) {
+            System.out.println(" El menor es " + numero1 + " y " + numero2);
+           
+        }
+         else if (numero1 == menor && numero3 == menor) {
+            System.out.println(" El menor es " + numero1 + " y " + numero3);
+        }
+         else if (numero2 == menor && numero3 == menor ) {
+            System.out.println(" El menor es " + numero2 + " y " + numero3);
+         }
+        else if (numero1 == menor) {
+            System.out.println(" El menor es " + numero1);
+        }
+         else if (numero2 == menor ) {
+            System.out.println(" El menor es " + numero2);
+        }
+         else if (numero3 == menor) {
+            System.out.println(" El menor es " + numero3);
+        }
+         else {
+            System.out.println("Los tres son iguales");
+         }
+        sc.close();
+    }
+}
